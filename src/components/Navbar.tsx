@@ -7,7 +7,7 @@ import { links } from '@/data/data'
 
 export default function Navbar() {
   return (
-    <nav className='flex '>
+    <nav className='flex justify-between'>
       <div>
         <Image
           src={logo}
@@ -15,11 +15,11 @@ export default function Navbar() {
           width={25}
           height={25} />
       </div>
-      <ul className='flex flex-wrap items-center justify-center'>
+      <ul className='flex flex-wrap items-center justify-center gap-2'>
         {
           links.map(link => (
             <li
-              className='h-3/4 flex items-center justify-center relative'
+              className='h-3/4 flex items-center justify-center relative underline'
               key={link.name}
             >
               <Link href={link.hash}>
