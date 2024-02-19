@@ -18,9 +18,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} max-w-[1600px] p-2`}>
-        <Navbar />
-        {children}
+      <body className={`${inter.className} p-2`}>
+        <div className="relative">
+          <Navbar />
+          {children}
+        </div>
         <Footer />
       </body>
     </html>
