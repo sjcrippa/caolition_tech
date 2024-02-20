@@ -21,7 +21,7 @@ export default function Navbar() {
           links.map(link => (
             <li
               className='h-3/4 flex items-center justify-center relative underline'
-              key={link.name}
+              key={link.hash}
             >
               <Link href={link.hash}>
                 {link.name}
