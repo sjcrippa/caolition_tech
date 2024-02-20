@@ -1,10 +1,10 @@
 export const links = [
   {
-    name: 'History',
+    name: '01. History',
     hash: '#history'
   },
   {
-    name: 'Team',
+    name: '02. Team',
     hash: '#team'
   }
 ] as const

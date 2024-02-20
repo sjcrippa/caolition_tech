@@ -7,15 +7,16 @@ import { links } from '@/data/data'
 
 export default function Navbar() {
   return (
-    <nav className='fixed w-full z-20 flex px-2 py-3 justify-between left-0 max-w-screen-sm sm:max-w-screen-xl sm:left-1/2 sm:-translate-x-1/2'>
-      <div>
+    <nav className='fixed w-full z-20 flex px-4 py-5 justify-between left-0 max-w-screen-sm sm:max-w-screen-xl sm:left-1/2 sm:-translate-x-1/2 sm:px-2'>
+      <Link href={'/'}>
         <Image
           src={logo}
           alt='Logo Mountain Technologies'
-          width={25}
-          height={25} />
-      </div>
-      <ul className='flex items-center justify-center gap-4'>
+          width={35}
+          height={35} />
+      </Link>
+
+      <ul className='flex items-center justify-center gap-5 italic'>
         {
           links.map(link => (
             <li
