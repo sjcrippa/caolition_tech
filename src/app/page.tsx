@@ -5,7 +5,7 @@ import React from 'react'
 
 export default function page() {
   return (
-    <main className=''>
+    <main className='relative'>
       <Hero />
       <History />
       <Team />

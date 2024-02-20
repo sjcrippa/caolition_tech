@@ -7,7 +7,7 @@ import { links } from '@/data/data'
 
 export default function Navbar() {
   return (
-    <nav className='flex justify-between'>
+    <nav className='fixed w-full z-20 flex px-2 py-3 justify-between left-0 max-w-screen-sm sm:max-w-screen-xl sm:left-1/2 sm:-translate-x-1/2'>
       <div>
         <Image
           src={logo}
@@ -15,7 +15,7 @@ export default function Navbar() {
           width={25}
           height={25} />
       </div>
-      <ul className='flex flex-wrap items-center justify-center gap-2'>
+      <ul className='flex items-center justify-center gap-4'>
         {
           links.map(link => (
             <li
