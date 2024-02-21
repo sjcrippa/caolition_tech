@@ -29,7 +29,7 @@ export default function Navbar() {
         {
           links.map(link => (
             <motion.li
-              className='h-3/4 flex items-center justify-center relative underline'
+              className='h-3/4 flex items-center justify-center relative underline uppercase'
               key={link.hash}
               initial={{ y: -100, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
