@@ -1,4 +1,5 @@
 import * as React from "react"
+import Image from "next/image"
 
 import { Card, CardContent } from "@/components/ui/card"
 import {
@@ -9,10 +10,15 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel"
 
-export function HistoryCarousel() {
+import carouselfirst from "/public/carouselfirst.png"
+import carouselsec from "/public/carouselsec.png"
+import { carouselImages } from "@/data/data"
+
+export function HistoryCarousel({ imageUrl }: any) {
+
   return (
     <section className="absolute bottom-1/4 sm:bottom-1/3 lg:bottom-0 z-1 w-full mx-auto h-60 lg:bg-blue-800/30">
-      <section className="flex justify-center align-middle items-center py-0 sm:py-7">
+      <section className="flex justify-center align-middle items-center py-0 sm:py-10">
         <Carousel
           opts={{
             align: "start",
@@ -22,10 +28,10 @@ export function HistoryCarousel() {
           <CarouselContent>
             {Array.from({ length: 5 }).map((_, index) => (
               <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
-                <div className="p-1">
-                  <Card className="">
-                    <CardContent className="flex aspect-square items-center justify-center p-10">
-                      <span className="text-3xl font-semibold">{index + 1}</span>
+                <div>
+                  <Card className="w-56">
+                    <CardContent className="flex justify-center w-full h-full">
+                      <Image className="object-contain" src={carouselImages[index % carouselImages.length].imageUrl} alt='algo' />
                     </CardContent>
                   </Card>
                 </div>
