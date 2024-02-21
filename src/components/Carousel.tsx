@@ -29,7 +29,7 @@ export function HistoryCarousel({ imageUrl }: any) {
             {Array.from({ length: 5 }).map((_, index) => (
               <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
                 <div>
-                  <Card className="w-56">
+                  <Card className="w-auto md:w-56">
                     <CardContent className="flex justify-center w-full h-full">
                       <Image className="object-contain" src={carouselImages[index % carouselImages.length].imageUrl} alt='algo' />
                     </CardContent>
