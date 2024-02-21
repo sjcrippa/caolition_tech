@@ -18,7 +18,7 @@ export function HistoryCarousel({ imageUrl }: any) {
 
   return (
     <section className="absolute bottom-1/4 sm:bottom-1/3 lg:bottom-0 z-1 w-full mx-auto h-60 lg:bg-blue-800/30">
-      <section className="flex justify-center align-middle items-center py-0 sm:py-10">
+      <section className="flex justify-center align-middle items-center py-0 sm:py-20 md:py-10">
         <Carousel
           opts={{
             align: "start",
@@ -31,7 +31,7 @@ export function HistoryCarousel({ imageUrl }: any) {
                 <div>
                   <Card className="w-auto md:w-56">
                     <CardContent className="flex justify-center w-full h-full">
-                      <Image className="object-contain" src={carouselImages[index % carouselImages.length].imageUrl} alt='algo' />
+                      <Image className="object-contain rounded-sm" src={carouselImages[index % carouselImages.length].imageUrl} alt='algo' />
                     </CardContent>
                   </Card>
                 </div>

@@ -13,7 +13,7 @@ export default function Hero() {
       </div>
 
       <Image
-        className='-z-10 object-cover absolute h-screen'
+        className='-z-10 object-cover h-screen'
         src={hero}
         alt='Mountains background image'
       />
