@@ -10,14 +10,12 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel"
 
-import carouselfirst from "/public/carouselfirst.png"
-import carouselsec from "/public/carouselsec.png"
 import { carouselImages } from "@/data/data"
 
-export function HistoryCarousel({ imageUrl }: any) {
+export function HistoryCarousel() {
 
   return (
-    <section className="absolute bottom-1/4 sm:bottom-1/3 lg:bottom-0 z-1 w-full mx-auto h-60 lg:bg-blue-800/30">
+    <section className="absolute bottom-[4rem] sm:bottom-1/3 lg:bottom-0 z-1 w-full mx-auto h-60 lg:bg-blue-800/30">
       <section className="flex justify-center align-middle items-center py-0 sm:py-20 md:py-10">
         <Carousel
           opts={{
