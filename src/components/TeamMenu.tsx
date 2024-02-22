@@ -8,7 +8,7 @@ export default function TeamMenu() {
   const [selectedMountain, setSelectedMountain] = useState<Mountain>(mountains[0])
 
   useEffect(() => {
-    // Actualizar el contenido del calendario al cambiar la montaña seleccionada
+    // Updating content
   }, [selectedMountain]);
 
   const handleMenuClick = (mountain: Mountain) => {
@@ -17,10 +17,10 @@ export default function TeamMenu() {
 
   return (
     <section className='relative z-20'>
-      <menu className="border border-purple-500 h-12 flex gap-5 justify-center text-lg bg-blue-950 text-slate-400 font-bold underline">
+      <menu className="h-12 flex gap-5 justify-center text-lg bg-blue-950 text-slate-400 font-bold">
         {mountains.map((mountain) => (
           <button
-            className=''
+            className='active:bg-slate-400 active:text-blue-950'
             key={mountain.name}
             onClick={() => handleMenuClick(mountain)}>
             {mountain.name}
