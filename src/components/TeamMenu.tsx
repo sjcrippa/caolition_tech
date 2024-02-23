@@ -1,11 +1,12 @@
 'use client'
 
 import React, { useState, useEffect } from 'react';
+import clsx from 'clsx';
 
 import { Mountain, mountains } from '@/data/data';
 
 export default function TeamMenu() {
-  const [selectedMountain, setSelectedMountain] = useState<Mountain>(mountains[0])
+  const [selectedMountain, setSelectedMountain] = useState<Mountain>(mountains[0]);
 
   useEffect(() => {
     // Updating content
@@ -16,13 +17,15 @@ export default function TeamMenu() {
   };
 
   return (
-    <section className='relative z-20'>
-      <menu className="h-12 flex gap-5 justify-center text-lg bg-blue-950 text-slate-400 font-bold">
+    <section className='relative'>
+      <menu className="h-12 flex gap-5 justify-center text-lg bg-blue-950 text-slate-400 font-bold z-20">
         {mountains.map((mountain) => (
           <button
-            className='active:bg-slate-400 active:text-blue-950'
+            className={`py-1 px-4 ${selectedMountain.name === mountain.name ? 'bg-gray-400 text-blue-950 underline' : ''
+              }`}
             key={mountain.name}
-            onClick={() => handleMenuClick(mountain)}>
+            onClick={() => handleMenuClick(mountain)}
+          >
             {mountain.name}
           </button>
         ))}
