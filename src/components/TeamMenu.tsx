@@ -1,7 +1,6 @@
 'use client'
 
 import React, { useState, useEffect } from 'react';
-import clsx from 'clsx';
 
 import { Mountain, mountains } from '@/data/data';
 
@@ -21,7 +20,7 @@ export default function TeamMenu() {
       <menu className="h-12 flex gap-5 justify-center text-lg bg-blue-950 text-slate-400 font-bold z-20">
         {mountains.map((mountain) => (
           <button
-            className={`py-1 px-4 ${selectedMountain.name === mountain.name ? 'bg-gray-400 text-blue-950 underline' : ''
+            className={`py-1 px-4 ${selectedMountain.name === mountain.name ? 'bg-gray-400 text-blue-950 underline transition-all ease-in duration-200' : ''
               }`}
             key={mountain.name}
             onClick={() => handleMenuClick(mountain)}
