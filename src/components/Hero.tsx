@@ -5,7 +5,7 @@ import hero from "/public/herobg.png";
 
 export default function Hero() {
   return (
-    <section className='relative h-screen'>
+    <section className='h-screen'>
 
       <div className='w-full absolute top-32 sm:top-36z-10 text-center'>
         <h1 className='text-slate-900 font-extrabold text-5xl sm:text-7xl'>LOS ANGELES</h1>
