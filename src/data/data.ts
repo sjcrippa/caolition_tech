@@ -27,7 +27,10 @@ export const carouselImages = [
 
 export interface Mountain {
   name: string;
-  schedule: { date: string; description: string }[];
+  schedule: {
+    date: string;
+    description: string
+  }[];
 }
 
 export const mountains: Mountain[] = [

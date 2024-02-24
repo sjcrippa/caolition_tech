@@ -8,7 +8,7 @@ export default function History() {
   return (
     <section id='history' className='relative' >
 
-      <article className='absolute py-20 sm:py-24 sm:left-1/2 sm:-translate-x-1/2'>
+      <article className='absolute py-20 sm:py-24 sm:left-1/2 sm:-translate-x-1/2 border border-red-500'>
 
         <div className='w-full flex justify-center md:w-[initial] md:block'>
 

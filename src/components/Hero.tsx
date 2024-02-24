@@ -10,7 +10,11 @@ export default function Hero() {
   return (
     <section className='h-screen'>
 
-      <motion.div className='w-full absolute top-48 sm:top-36 text-center'>
+      <motion.div
+        className='w-full absolute top-48 sm:top-36 text-center'
+        initial={{ y: -100, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+      >
         <h1 className='text-slate-900 font-extrabold text-5xl sm:text-7xl'>LOS ANGELES</h1>
         <h2 className='text-blue-950 tracking-widest font-extrabold text-5xl sm:text-7xl'>MOUNTAINS</h2>
       </motion.div>

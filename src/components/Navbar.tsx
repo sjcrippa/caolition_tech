@@ -18,6 +18,7 @@ export default function Navbar() {
             animate={{ y: 0, opacity: 1 }}
           >
             <Image
+              className='border-[0.5px] rounded-full border-gray-400'
               src={logo}
               alt='Logo Mountain Technologies'
               width={35}
@@ -26,11 +27,11 @@ export default function Navbar() {
           </motion.div>
         </Link>
 
-        <ul className='flex items-center justify-center gap-5 italic'>
+        <ul className='flex items-center justify-center gap-5'>
           {
             links.map(link => (
               <motion.li
-                className='h-3/4 flex items-center justify-center relative underline uppercase'
+                className='h-3/4 font-semibold flex items-center justify-center relative underline uppercase italic'
                 key={link.hash}
                 initial={{ y: -100, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
