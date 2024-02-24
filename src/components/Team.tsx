@@ -18,7 +18,7 @@ export default function Team() {
           <p className='absolute bottom-3 right-[2rem] text-2xl text-blue-950 font-extrabold'>CLIMB</p>
         </section>
 
-        <p className='text-center mt-10 mx-5 sm:mx-[initial] sm:mt-1 md:text-start text-blue-950 font-semibold md:w-[30rem] xl:w-[50rem] p-2'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi facilis minus explicabo doloribus? Facilis aut architecto molestiae veniam similique dignissimos minus asperiores eveniet sequi cum.</p>
+        <p className='text-sm md:text-base lg:text-xl text-center mt-3 md:mt-10 mx-5 sm:mx-[initial] md:text-start text-blue-950 font-semibold md:w-[30rem] xl:w-[50rem] p-2'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi facilis minus explicabo doloribus? Facilis aut architecto molestiae veniam similique dignissimos minus asperiores eveniet sequi cum.</p>
       </article>
 
       <TeamMenu />

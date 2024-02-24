@@ -21,7 +21,7 @@ export default function History() {
           </section>
         </div>
 
-        <p className='w-auto sm:w-[40rem] md:w-[30rem] text-center mt-16 sm:mt-5 xl:mt-2 mx-5 sm:mx-[initial] md:translate-x-[4rem] md:text-start text-blue-950 font-semibold'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse facilis ipsum optio harum odit autem mollitia, culpa sit repellat saepe. Vero voluptatibus cupiditate quos, impedit suscipit voluptas modi, animi laboriosam tenetur beatae hic aperiam repellendus. Ad error amet voluptates explicabo ullam, at alias ipsam exercitationem hic commodi nihil in eligendi.</p>
+        <p className='backdrop-blur-sm md:backdrop-blur-0 font-bold w-auto sm:w-[40rem] md:w-[30rem] text-center mt-16 sm:mt-5 xl:mt-2 mx-5 sm:mx-[initial] md:translate-x-[4rem] md:text-start text-blue-950'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse facilis ipsum optio harum odit autem mollitia, culpa sit repellat saepe. Vero voluptatibus cupiditate quos, impedit suscipit voluptas modi, animi laboriosam tenetur beatae hic aperiam repellendus. Ad error amet voluptates explicabo ullam, at alias ipsam exercitationem hic commodi nihil in eligendi.</p>
       </article>
 
       <Image
