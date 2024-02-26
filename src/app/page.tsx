@@ -1,14 +1,15 @@
+import React from 'react'
+
 import Hero from '@/components/Hero'
 import History from '@/components/History'
 import Team from '@/components/Team'
-import React from 'react'
 
-export default function page() {
+export default function InitialPage() {
   return (
-    <main className='relative'>
+    <section className='relative'>
       <Hero />
       <History />
       <Team />
-    </main>
+    </section>
   )
 }
