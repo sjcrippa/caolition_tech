@@ -8,7 +8,7 @@ export default function Team() {
   return (
     <section id='team' className='relative'>
 
-      <article className='relative py-10 sm:left-1/2 sm:-translate-x-1/2 bg-gray-50 w-full h-72 flex flex-col gap-y-3 justify-center items-center md:flex md:flex-row md:gap-5'>
+      <article className='relative py-10 px-16 sm:left-1/2 sm:-translate-x-1/2 bg-gray-50 w-full h-72 flex flex-col gap-y-3 justify-center items-center md:flex md:flex-row md:gap-5'>
 
         <section className='relative mx-auto w-72 h-28 sm:mx-[initial]'>
           <div className='text-9xl font-bold text-slate-500/70'>
