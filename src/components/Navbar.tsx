@@ -28,7 +28,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <header className={`fixed w-full z-20 left-0 px-3 md:px-10 lg:px-[28rem] sm:left-1/2 sm:-translate-x-1/2 text-gray-50  ${scrolled ? 'bg-gray-50 text-blue-800' : 'bg-transparent'} transition ease-linear duration-200`}>
+    <header className={`fixed w-full z-20 left-0 px-3 md:px-10 lg:px-[28rem] sm:left-1/2 sm:-translate-x-1/2 text-gray-50  ${scrolled ? 'bg-gray-50 text-[#1F618D]' : 'bg-transparent'} transition ease-linear duration-200`}>
       <nav className='flex px-4 py-5 justify-between'>
         <Link href={'/'}>
           <motion.div
